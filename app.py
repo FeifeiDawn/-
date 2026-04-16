@@ -8,7 +8,7 @@ from plotly.subplots import make_subplots
 # 全局配置与基础参数
 # ==========================================
 st.set_page_config(page_title="T0 SKU MRP仿真系统", layout="wide")
-st.title("📦 供应链 MRP 自适应寻优沙盘 (统一量纲版)")
+st.title("📦 供应链 MRP 自适应寻优沙盘")
 
 TOTAL_WEEKS = 52
 BASE_DEMAND = 30
@@ -244,7 +244,7 @@ forecast_arr_ui = get_forecast(forecast_mode_ui, ma_n_ui if "1." in forecast_mod
 # ==========================================
 st.markdown("---")
 st.header("🚀 AI 海空联运联合寻优中心 (Sea-Air Joint Optimization)")
-st.info("系统将在设定的环境下执行**数百次**沙盘推演，并自动输出总成本最低的【海空联运最优配置】。在现代 CPU 下，这仅需不到 0.5 秒。")
+st.info("系统将在设定的环境下执行**数百次**沙盘推演，并自动输出总成本最低的【海空联运最优配置】。")
 
 with st.expander("💡 了解 AI 海空联运决策推演逻辑"):
     st.markdown("""
